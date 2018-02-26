@@ -7,7 +7,7 @@ class App extends Component {
       <div className="container">
         <div id="left" className="column">
             <div className="top-left">
-              <strong>Beryllium</strong>
+              <strong>beryllium</strong>
             </div>
             <div className="bottom">
               <p>one</p>

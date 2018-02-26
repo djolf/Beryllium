@@ -1,8 +1,8 @@
 {
-    "name": "Beryllium",
+    "name": "beryllium",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://djolf.github.io/Beryllium",
+    "homepage": "https://djolf.github.io/beryllium",
     "devDependencies": {
         "react-scripts": "1.1.1"
     },
@@ -16,7 +16,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject",
-        "predeploy": "npm run build",
+        "predeploy": "yarn build",
         "deploy": "gh-pages -d build"
     }
 }
