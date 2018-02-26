@@ -1,5 +1,23 @@
+html {
+    height: 100%;
+    font-family: helvetica, sans-serif;
+}
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    height: 100%;
+    overflow: hidden;
+    /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+    margin: 0px;
+    /*removes default style*/
+    display: flex;
+    /*enables flex content for its children*/
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0px;
 }
