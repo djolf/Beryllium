@@ -1,56 +1,41 @@
-.column {
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
     height: 100%;
-    /*allows both columns to span the full height of the browser window*/
-    display: flex;
-    flex-direction: column;
-    /*places the left and right headers above the bottom content*/
-}
-
-#left {
-    flex-shrink: 0;
-    /*makes sure that content is not cut off in a smaller browser window*/
-}
-
-.top-left {
-    flex-shrink: 0;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-.top-right {
-    flex-shrink: 0;
-    display: inline-flex;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
-ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 0;
-}
-
-li {
-    margin-right: 20px;
-}
-
-.bottom {
-    flex-grow: 1;
-    /*ensures that the container will take up the full height of the parent container*/
-    overflow-y: auto;
-    /*adds scroll to this container*/
-    padding: 20px;
-}
-
-.container {
-    height: 100%;
+    width: 100%;
     overflow: hidden;
-    /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
-    margin: 0px;
-    /*removes default style*/
-    display: flex;
-    /*enables flex content for its children*/
-    box-sizing: border-box;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
