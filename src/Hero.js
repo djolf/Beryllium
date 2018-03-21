@@ -11,16 +11,16 @@ class Hero extends Component {
 
     render() {
         return(
-            <header class='v-header container'>
-                <div class="fullscreen-video-wrap">
-                    <video src={bgmp4} autoplay='true' loop='true'></video>
+            <header className='v-header container'>
+                <div className="fullscreen-video-wrap">
+                    <video src={bgmp4} autoPlay='true' loop='true'></video>
                 </div>
-                <div class="header-overlay"></div>
-                <div class="header-content">
+                <div className="header-overlay"></div>
+                <div className="header-content">
                     <h1>Djolf's Page</h1>
                     <p>This page is a coding practice by djolf.</p>
                 </div>
-                <div href="#" class="frontpage-btn">More..</div>
+                <div href="#" className="frontpage-btn">More..</div>
             </header>
         );
     }
