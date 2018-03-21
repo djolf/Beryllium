@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Hero from './Hero';
 import './App.css';
-
 
 class App extends Component {
     constructor(props) {
@@ -11,10 +11,8 @@ class App extends Component {
 
     render() {
         return(
-            <div>
-                <video className="video-container video-container-overlay" autoPlay loop muted>
-                    <source src='background.mp4' type="video/mp4" />
-                </video>
+            <div className='root'>
+                <Hero/>
             </div>
         );
     }
